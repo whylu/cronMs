@@ -23,11 +23,12 @@ function addStatus() {
 # $1 => call interval time in second
 # $2 => command
 function call_endless_loop() {
+    echo $BASHPID start
     touch $startpid/$BASHPID
     addStatus $BASHPID $1 $2
     while true;
     do
-        $("$2" &)
+        $("$2") &
         sleep $1
     done
 }
