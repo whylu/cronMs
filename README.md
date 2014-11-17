@@ -43,10 +43,10 @@ Working
 -------
 At "./cronMs.sh start", cronMs read this file and run every <command> by <interval> second period,
 and put process pids into ./startpid/ folder,
-and echo "pid, interval, command" >> ./status
+and echo "pid, interval, command" into ./status
 
 
-CronMs create another thread to read a line, executes a command, and sleep <interval> second, 
+CronMs create another thread to read a line, executes a command, and sleep {interval} second, 
 then repeat execute and sleep foever, until "./cronMs.sh stop" executed.
 The execution of command and sleep command start at the same time, so, if execution time of command large than sleep, you will get more than one execution process of <command> at the same time.
 
