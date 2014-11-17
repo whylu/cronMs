@@ -10,7 +10,7 @@ downolad from git
 go into cronMs folder, create a folder named "startpid", 
 change cornMs.sh to executable, 
 change ./a/run and ./b/run  to executable, 
-> mkdir startpid \n
+>mkdir startpid
 > chmod +x cronMs.sh
 > chmod +x a/run
 > chmod +x b/run
