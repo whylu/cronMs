@@ -31,7 +31,7 @@ function call_endless_loop() {
         
     echo $BASHPID start
     touch $startpid/$BASHPID
-    addStatus $BASHPID $1 $2
+    addStatus $BASHPID $interval $command
     while true;
     do
         $("$command") &
@@ -71,7 +71,7 @@ case "$1" in
     start)
         echo "start..."
         cron_stop
-        cron_start >./log/msg.log 2>&1
+        cron_start >./log/msg.log 2>&1 &
     ;;
     stop)
         echo "stop..."
