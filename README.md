@@ -4,7 +4,10 @@ Schedule jobs in seconds period
 
 Installation:
 -------------
- downolad from git
+downolad from git
+go into cronMs folder, create a folder named "startpid"
+mkdir startpid
+
 
 Run:
 ----
