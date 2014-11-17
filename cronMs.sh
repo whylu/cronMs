@@ -71,7 +71,7 @@ case "$1" in
     start)
         echo "start..."
         cron_stop
-        cron_start&
+        cron_start >./log/msg.log 2>&1
     ;;
     stop)
         echo "stop..."
