@@ -23,21 +23,30 @@ function addStatus() {
 # $1 => call interval time in second
 # $2 => command
 function call_endless_loop() {
+    fullLine=$@
+    set -- $fullLine
+    interval=$1
+    shift
+    command=$@
+        
     echo $BASHPID start
     touch $startpid/$BASHPID
     addStatus $BASHPID $1 $2
     while true;
     do
-        $("$2") &
-        sleep $1
+        $("$command") &
+        sleep $interval
     done
 }
 
 
 function cron_start() {
     while read line; do
-        IFS=' ' read -r interval command <<< "$line"
-        if [ "$interval" > "0" ]; then  
+        set -- $line
+        interval=$1
+        shift
+        command=$@
+        if [ "$interval" > "0" ]; then
             call_endless_loop $interval $command &
         fi
     done < $config
