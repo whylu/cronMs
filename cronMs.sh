@@ -1,5 +1,6 @@
+
 # the install path
-cronMs_path=/opt/workspace/cronMs
+cronMs_path=$(pwd)
 
 # the config path
 config=$cronMs_path/config
