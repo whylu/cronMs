@@ -23,7 +23,6 @@ edit ./config file fomated as follwoing
 
 for example:
 5 /opt/workspace/cronMs/a/run
-20 /opt/workspace/cronMs/b/run
 
 
 Working
