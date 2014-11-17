@@ -8,9 +8,12 @@ downolad from git
 > git clone https://github.com/whylu/cronMs.git
 
 go into cronMs folder, create a folder named "startpid", 
+create a folder named "log", 
 change cornMs.sh to executable, 
 change ./a/run and ./b/run  to executable, 
 >mkdir startpid
+
+>mkdir log
 
 >chmod +x cronMs.sh
 
