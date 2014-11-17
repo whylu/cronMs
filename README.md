@@ -45,7 +45,7 @@ for example:
 
 cronMs use "sleep {interval}" to get into idle, 
 you can using any decimal number to asign sleep interval, for example:
-> 0.5 <commnad>
+> 0.5 {commnad}
 
 
 Working
