@@ -6,6 +6,7 @@ Installation:
 -------------
 downolad from git
 > git clone https://github.com/whylu/cronMs.git
+
 go into cronMs folder, create a folder named "startpid"
 > mkdir startpid
 
