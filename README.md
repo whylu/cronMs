@@ -6,7 +6,9 @@ Installation:
 -------------
 downolad from git
 go into cronMs folder, create a folder named "startpid"
-mkdir startpid
+> mkdir startpid
+
+
 
 
 Run:
