@@ -13,30 +13,30 @@ go into cronMs folder, create a folder named "startpid"
 
 Run:
 ----
-./cronMs.sh start 
+> ./cronMs.sh start 
 
 
 Stop:
 -----
-./cronMs.sh stop
+> ./cronMs.sh stop
 
 
 Show Status:
 ------------
-./cronMs.sh status
+> ./cronMs.sh status
 
 
 Config period of command:
 -------------------------
 edit ./config file fomated as follwoing
-<interval> <command>
+> <interval> <command>
 
 for example:
-5 /opt/workspace/cronMs/a/run
+> 5 /opt/workspace/cronMs/a/run
 
 cronMs use "sleep <interval>" to get into idle, 
 you can using any decimal number to asign sleep interval, for example:
- 0.5 <commnad>
+> 0.5 <commnad>
 
 
 Working
